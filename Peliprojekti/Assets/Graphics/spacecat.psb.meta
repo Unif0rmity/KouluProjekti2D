@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 10cb75ced573d1d409a61c8d184b9af4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: "kyp\xE4r\xE4"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 102
+      height: 99
+    spriteID: d765d02ad4bc84e4197e5fe1c74a7bc2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -95, y: -39}
+  - name: face
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 410
+      width: 90
+      height: 82
+    spriteID: ad9de0405f6939842a2e1e1a5547b688
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -101, y: 247}
+  - name: JET
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 197
+      width: 48
+      height: 23
+    spriteID: 8038e55df7824b14e96584a55cffca77
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 112, y: 53}
+  - name: TAKAjalka1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 197
+      width: 46
+      height: 85
+    spriteID: 239fd092424e8804888d8afa853dc242
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 84, y: 179}
+  - name: ETUjalka1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 290
+      width: 44
+      height: 82
+    spriteID: 33ccc53ffc4b7b6469b7f756461b22ca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5, y: 272}
+  - name: bell
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 380
+      width: 34
+      height: 31
+    spriteID: 2f3652c5a84a6034888d27380f188d45
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -40, y: 252}
+  - name: "h\xE4nt\xE4"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 227
+      width: 53
+      height: 175
+    spriteID: 4a53172ff278f13449b0902e0f1d7b88
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -14, y: 121}
+  - name: body
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 168
+      height: 108
+    spriteID: ed9d17d5d9f6aa0458ea97997f46dd5e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -23, y: -54}
+  - name: ETU jalka 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 4
+      width: 46
+      height: 87
+    spriteID: be6504bcce2659d4b973a7427e7db1f1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: -15}
+  - name: TAKA jalka 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 120
+      width: 99
+      height: 69
+    spriteID: 81582f92c959c3e45bb09899709bf40b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 55, y: 101}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 512
+  documentSize: {x: 246, y: 299}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 256
+  textureActualHeight: 512
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: "kyp\xE4r\xE4"
+    spriteName: "kyp\xE4r\xE4"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d765d02ad4bc84e4197e5fe1c74a7bc2
+    layerID: 0
+    mosaicPosition: {x: 4, y: 120}
+  - name: face
+    spriteName: face
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad9de0405f6939842a2e1e1a5547b688
+    layerID: -1966748603
+    mosaicPosition: {x: 4, y: 410}
+  - name: JET
+    spriteName: JET
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8038e55df7824b14e96584a55cffca77
+    layerID: 1596708091
+    mosaicPosition: {x: 168, y: 197}
+  - name: TAKAjalka1
+    spriteName: TAKAjalka1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 239fd092424e8804888d8afa853dc242
+    layerID: 2071638099
+    mosaicPosition: {x: 114, y: 197}
+  - name: ETUjalka1
+    spriteName: ETUjalka1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 33ccc53ffc4b7b6469b7f756461b22ca
+    layerID: -348217444
+    mosaicPosition: {x: 114, y: 290}
+  - name: bell
+    spriteName: bell
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2f3652c5a84a6034888d27380f188d45
+    layerID: -514975833
+    mosaicPosition: {x: 114, y: 380}
+  - name: "h\xE4nt\xE4"
+    spriteName: "h\xE4nt\xE4"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4a53172ff278f13449b0902e0f1d7b88
+    layerID: 1418424272
+    mosaicPosition: {x: 4, y: 227}
+  - name: body
+    spriteName: body
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ed9d17d5d9f6aa0458ea97997f46dd5e
+    layerID: -911353822
+    mosaicPosition: {x: 4, y: 4}
+  - name: ETU jalka 2
+    spriteName: ETU jalka 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: be6504bcce2659d4b973a7427e7db1f1
+    layerID: -1784114713
+    mosaicPosition: {x: 180, y: 4}
+  - name: TAKA jalka 2
+    spriteName: TAKA jalka 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 81582f92c959c3e45bb09899709bf40b
+    layerID: 42069056
+    mosaicPosition: {x: 114, y: 120}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: spacecat Texture
+  prefabAssetName: spacecat Prefab
+  spriteLibAssetName: spacecat Sprite Lib
+  secondarySpriteTextures: []
