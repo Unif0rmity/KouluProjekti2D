@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public GameObject detectionPoint;
     public Animator animator;
 
-    // Tämä on oikea tapa. 
+
     [SerializeField]
     private float direction;
 
@@ -18,6 +18,11 @@ public class Enemy : MonoBehaviour
 
     [SerializeField]
     private LayerMask groundLayer;
+
+
+
+
+    // Start is called before the first frame update
     void Start()
     {
 
@@ -29,11 +34,11 @@ public class Enemy : MonoBehaviour
         transform.Translate(moveSpeed * Time.deltaTime * direction, 0, 0);
         transform.localScale = new Vector3(direction, 1, 1);
     }
+
     private void LateUpdate()
     {
 
         Debug.DrawRay(detectionPoint.transform.position, Vector2.down, Color.green);
-
         RaycastHit2D hit = Physics2D.Raycast(detectionPoint.transform.position, Vector2.down, 1, groundLayer);
 
         if (hit.collider == null)
@@ -60,13 +65,13 @@ public class Enemy : MonoBehaviour
         direction *= -1;
 
     }
+
     public void Die()
     {
         animator.SetTrigger("Die");
         moveSpeed = 0;
         Destroy(GetComponent<Rigidbody2D>());
         Destroy(GetComponent<BoxCollider2D>());
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 3);
     }
-
 }
