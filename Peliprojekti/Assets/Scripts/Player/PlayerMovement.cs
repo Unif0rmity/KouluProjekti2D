@@ -1,41 +1,90 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public PlayerStats stats;
-    public Rigidbody2D rb;
-    private Vector2 moveDirection;
+    public float moveSpeed;
+    public float jumpForce;
+
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+
+    public Animator animator;
+    public Rigidbody2D playerRB;
+
+    public bool grounded;
 
 
     void Start()
     {
-        Application.targetFrameRate = 120;
+        animator = GetComponent<Animator>();
+        playerRB = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
-    {
-        Vector2 force = new Vector2(moveDirection.x * stats.moveSpeed - rb.velocity.x, 0f);
-        rb.AddForce(force, ForceMode2D.Impulse);
-    }
+
     void Update()
     {
-        moveDirection = new Vector2(Input.GetAxis("Horizontal"), 0f);
-        HandleFlipping();
-        if (Input.GetButtonDown("Jump"))
-            HandleJumping();
+        GroundDetect();
+        transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
+        if (Input.GetAxisRaw("Horizontal") != 0)
+        {
+            transform.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
+            animator.SetBool("Walk", true);
+
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
+        }
+
+        if (Input.GetButtonDown("Jump") && grounded)
+        {
+            playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
+            animator.SetBool("Jump", true);
+        }
+
+        //youtube muunnos 
+        if (playerRB.velocity.y < 0)
+        {
+            playerRB.velocity += Vector2.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (playerRB.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            playerRB.velocity += Vector2.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            if (transform.position.y > collision.transform.position.y + collision.transform.localScale.y)
+            {
+                collision.gameObject.GetComponent<Enemy>().Die();
+                playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce * 0.4f);
+            }
+        }
     }
 
-    private void HandleJumping()
-    {
-        if (moveDirection.x == 0f) return;
-        rb.AddForce(Vector2.up * stats.jumpForce, ForceMode2D.Impulse);
-    }
 
-    private void HandleFlipping()
+    void GroundDetect()
     {
-        if (moveDirection.x == 0f) return;
-        transform.localScale = new Vector3(Mathf.Sign(moveDirection.x), 1f, 1f);
+        Vector3 checkPosition = transform.position - new Vector3(0, transform.localScale.y / 2, 0);
+        RaycastHit2D castHit = Physics2D.BoxCast(checkPosition, new Vector2(1.2f, 0.3f), 0, Vector2.zero, 0, LayerMask.GetMask("Ground"));
+        if (castHit && playerRB.velocity.y <= 0)
+        {
+            grounded = true;
+            animator.SetBool("Jump", false);
+
+        }
+        else
+        {
+            grounded = false;
+
+        }
     }
 }
