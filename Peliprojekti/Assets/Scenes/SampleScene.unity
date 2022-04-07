@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 1507585020}
   - component: {fileID: 1507585019}
   - component: {fileID: 1507585021}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23761,7 +23761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1888327071}
   - component: {fileID: 1888327070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
