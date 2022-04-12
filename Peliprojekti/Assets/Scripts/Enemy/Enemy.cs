@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         transform.Translate(moveSpeed * Time.deltaTime * direction, 0, 0);
@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
     {
 
         Debug.DrawRay(detectionPoint.transform.position, Vector2.down, Color.green);
+
         RaycastHit2D hit = Physics2D.Raycast(detectionPoint.transform.position, Vector2.down, 1, groundLayer);
 
         if (hit.collider == null)
@@ -61,7 +62,7 @@ public class Enemy : MonoBehaviour
 
     void ChangeDirection()
     {
-
+        Debug.Log("Suunnanvaihto");
         direction *= -1;
 
     }
