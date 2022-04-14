@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -67,7 +69,34 @@ public class PlayerMovement : MonoBehaviour
                 collision.gameObject.GetComponent<Enemy>().Die();
                 playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce * 0.4f);
             }
+            else
+            {
+                CatDie();
+            }
         }
+    }
+    public void CatDie()
+    {
+
+        animator.SetTrigger("Die");
+        playerRB.velocity = new Vector2(0, 9);
+        Destroy(GetComponent<BoxCollider2D>());
+        moveSpeed = 0;
+        Destroy(gameObject, 6);
+        StartCoroutine("ContinueTime");
+        Time.timeScale = 0;
+    }
+    IEnumerator ContinueTime()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        Time.timeScale = 1;
+        yield return new WaitForSecondsRealtime(2);
+        RestartLevel();
+    }
+    void RestartLevel()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
