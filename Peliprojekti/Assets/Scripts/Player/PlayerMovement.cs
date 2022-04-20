@@ -83,6 +83,22 @@ public class PlayerMovement : MonoBehaviour
                 CatDie();
             }
         }
+        if (collision.gameObject.CompareTag("Alien"))
+        {
+
+            if (transform.position.y > collision.transform.position.y + collision.transform.localScale.y)
+            {
+
+                collision.gameObject.GetComponent<Alien>().Die();
+                playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce * 0.4f);
+            }
+            else
+            {
+
+                CatDie();
+            }
+
+        }
     }
     public void CatDie()
     {
