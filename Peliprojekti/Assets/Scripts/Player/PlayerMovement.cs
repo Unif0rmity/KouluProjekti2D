@@ -99,6 +99,11 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+
+        if (collision.gameObject.CompareTag("FallDeath"))
+        {
+            CatDie();
+        }
     }
     public void CatDie()
     {
