@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 99e97ea2b9e88074a836ce776e61674c
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -718859989296118758
+    second: tumma_palikka_nro.1_0
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -91,7 +94,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Brightness/Contrast 3
+  - name: tumma_palikka_nro.1_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,7 +105,7 @@ ScriptedImporter:
       y: 4
       width: 64
       height: 64
-    spriteID: b13753629cade53449562b95f62ebbfa
+    spriteID: a1483cef5a81606f0800000000000000
     internalID: 0
     spriteBone: []
     spriteOutline: []
