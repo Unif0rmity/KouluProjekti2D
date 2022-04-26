@@ -7348,8 +7348,8 @@ Tilemap:
   - first: {x: 101, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7878,8 +7878,8 @@ Tilemap:
   - first: {x: 101, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8478,8 +8478,8 @@ Tilemap:
   - first: {x: 54, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8738,8 +8738,8 @@ Tilemap:
   - first: {x: 54, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8977,16 +8977,16 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 263
+  - m_RefCount: 259
     m_Data: {fileID: 11400000, guid: b1d69fa29e3efca45b957ee2410b4ca9, type: 2}
-  - m_RefCount: 349
+  - m_RefCount: 353
     m_Data: {fileID: 11400000, guid: c65f618643dc57a4eb8724e0465bc585, type: 2}
   - m_RefCount: 188
     m_Data: {fileID: 11400000, guid: 02a69adc3b8b60a469d3d9dedf179f3f, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 263
+  - m_RefCount: 259
     m_Data: {fileID: -8469746217819366612, guid: 0de910ab0b3be47478bf3cd8aa81eb65, type: 3}
-  - m_RefCount: 349
+  - m_RefCount: 353
     m_Data: {fileID: -3310095791473466519, guid: 0de910ab0b3be47478bf3cd8aa81eb65, type: 3}
   - m_RefCount: 188
     m_Data: {fileID: -9153335789876911092, guid: 99e97ea2b9e88074a836ce776e61674c, type: 3}
