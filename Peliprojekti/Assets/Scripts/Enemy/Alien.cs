@@ -76,7 +76,7 @@ public class Alien : MonoBehaviour
         moveSpeed = 0;
         Destroy(GetComponent<Rigidbody2D>());
         Destroy(GetComponent<BoxCollider2D>());
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 6);
 
     }
 }
