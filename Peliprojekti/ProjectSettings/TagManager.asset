@@ -8,6 +8,7 @@ TagManager:
   - Diamond
   - Alien
   - FallDeath
+  - LevelEnd
   layers:
   - Default
   - TransparentFX

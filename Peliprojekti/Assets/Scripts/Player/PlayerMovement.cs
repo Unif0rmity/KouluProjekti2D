@@ -68,6 +68,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("LevelEnd"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
