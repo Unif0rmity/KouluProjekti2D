@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Diamond"))
         {
+            SoundManagerScript.PlaySound("itemSound");
             Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("LevelEnd"))
