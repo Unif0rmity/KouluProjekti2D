@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.gameObject.CompareTag("LevelEnd"))
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Level2");
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
