@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
+
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
             animator.SetBool("Jump", true);
         }
@@ -67,6 +68,8 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Diamond"))
         {
             SoundManagerScript.PlaySound("itemSound");
+            SoundManagerScript.PlaySound("PlayerHit");
+
             Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("LevelEnd"))
@@ -82,10 +85,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Enemy>().Die();
                 playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce * 0.4f);
+                SoundManagerScript.PlaySound("EnemyHit");
             }
             else
             {
                 CatDie();
+
             }
         }
         if (collision.gameObject.CompareTag("Alien"))
@@ -96,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
 
                 collision.gameObject.GetComponent<Alien>().Die();
                 playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce * 0.4f);
+                SoundManagerScript.PlaySound("EnemyHit");
             }
             else
             {
@@ -120,6 +126,8 @@ public class PlayerMovement : MonoBehaviour
         Destroy(gameObject, 6);
         StartCoroutine("ContinueTime");
         Time.timeScale = 0;
+        SoundManagerScript.PlaySound("GameOver");
+
     }
     IEnumerator ContinueTime()
     {
