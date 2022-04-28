@@ -57,6 +57,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+            Debug.Log("Going to Main Menu");
+        }
+
     }
 
 
