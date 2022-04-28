@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
-
+            SoundManagerScript.PlaySound("Bell");
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
             animator.SetBool("Jump", true);
         }

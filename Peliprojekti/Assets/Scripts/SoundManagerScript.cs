@@ -13,6 +13,8 @@ public class SoundManagerScript : MonoBehaviour
         playerHitSound = Resources.Load<AudioClip>("PlayerHit");
         enemyDeathSound = Resources.Load<AudioClip>("EnemyHit");
         gameOverSound = Resources.Load<AudioClip>("GameOver");
+        jumpSound = Resources.Load<AudioClip>("Bell");
+
 
         audioSrc = GetComponent<AudioSource>();
 
@@ -39,6 +41,9 @@ public class SoundManagerScript : MonoBehaviour
                 break;
             case "GameOver":
                 audioSrc.PlayOneShot(gameOverSound);
+                break;
+            case "Bell":
+                audioSrc.PlayOneShot(jumpSound);
                 break;
 
         }
