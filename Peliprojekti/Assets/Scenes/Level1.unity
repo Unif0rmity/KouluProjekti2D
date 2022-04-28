@@ -914,7 +914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 658222745252254711}
   offset: {x: 7.1, y: 1, z: -1}
-  cameraSpeed: 0.297
+  cameraSpeed: 0.327
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -11454,6 +11454,14 @@ PrefabInstance:
     - target: {fileID: 1457108044326157903, guid: d9c4ec58d743e7a43adc3a0eb97f0a5a, type: 3}
       propertyPath: m_Name
       value: spacecat done 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332890068751054003, guid: d9c4ec58d743e7a43adc3a0eb97f0a5a, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332890068751054003, guid: d9c4ec58d743e7a43adc3a0eb97f0a5a, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6332890068751054007, guid: d9c4ec58d743e7a43adc3a0eb97f0a5a, type: 3}
       propertyPath: MyScoreText
