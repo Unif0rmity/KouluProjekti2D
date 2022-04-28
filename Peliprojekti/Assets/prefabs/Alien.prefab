@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4571040529622459439}
   - component: {fileID: 2527309755657350178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IRIS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6436160161642214852}
   - component: {fileID: 8649223712277098900}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EYE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6893239672501890962}
   - component: {fileID: 5617228876287870315}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEG down L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6429966946018399044}
   - component: {fileID: 4570902282926262052}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: KNEE L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7699113813303370940}
   - component: {fileID: 104911589558281773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: KNEE R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8885984707204456060}
   - component: {fileID: 8868643777348050408}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEG down R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1340720081277335776}
   - component: {fileID: 7936323672090305066}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEG up R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 3178724941852797246}
   - component: {fileID: 3178724941852797244}
   - component: {fileID: 3178724941852797245}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Alien
   m_TagString: Alien
   m_Icon: {fileID: 0}
@@ -711,7 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5938361715399809183}
   - component: {fileID: 8179767497707754880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1434990658567938128}
   - component: {fileID: 6851842608940501258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEG down L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
