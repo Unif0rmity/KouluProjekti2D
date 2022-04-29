@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     public float smoothFactor;
     public Vector3 minValues, maxValue;
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         Follow();
     }
